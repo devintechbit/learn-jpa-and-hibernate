@@ -1,0 +1,82 @@
+
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+
+SECTION 6:GETTING STARTED WITH JPA AND HIBERNATE WITH SPRING AND SPRING BOOT
+
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+
+This projects include JDBC, JPA and HIBERNATE.......
+
+- In this particular section we only use JPA (hibernate not is used...)
+- jakarta is package of JPA... and that is used in this example
+- Because JPA is most recommended. If we used JPA then we can easily used HIBERNATE as implementation.
+
+-----------------------------------------------------------------------------
+
+- JPA is an interface 
+      - it used for define entities.(define by using @Emtity annotation)
+      - it used for mapping attributes. (by using @Id and @Column)
+      - it also manage the entity (by using EntityManager)
+
+-----------------------------------------------------------------------------
+
+and HIBERNATE is one of the most popular implementation of JPA
+
+-----------------------------------------------------------------------------
+
+Question: How to use HIBERNATE instead of JPA directly?
+
+      - It used by direct change in annotation of JPA to HIBERNATE annotation...
+      - we need to select HIBERNATE annotation instead of JAKARTA (JPA) annotation during implementation.
+
+-----------------------------------------------------------------------------
+
+JDBC URL : this url is default url which is genereted at execution....
+
+     =>   "url=jdbc:h2:mem:c2796649-c124-48c2-8a4b-106c0bcbabf1"
+
+-----------------------------------------------------------------------------
+
+1)to insert values in table...
+
+ =>   insert into course(id, name, author)
+      values(1, 'Learn AWS', 'DevPtl')
+
+-----------------------------------------------------------------------------
+
+2)to show inserted values in table...
+
+ =>   select*from course
+
+-----------------------------------------------------------------------------
+
+3)to delete this course...
+
+ =>   delete from course where id=1
+
+-----------------------------------------------------------------------------
+
+
+Notes:
+      1. JDBC:
+            - write a lot of SQL queries!
+            - also write a lot of Java code
+            
+      2. Spring JDBC:
+            - Write a lot of SQL queries
+            - BUT lesser Java code
+            
+      3. JPA:
+            - Do NOT worry about queries
+            - Just Map entities To Tables!
+            
+      4. Spring Data JPA:
+            - Let's make JPA even more simple!
+            - It will care of every thing!
+            
+            
+            
+-----------------------------------------------------------------------------
+            
